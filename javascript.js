@@ -14,4 +14,10 @@ function getComputerChoice(min, max) {
 
 let getHumanChoice = prompt("rock, paper, or scissors?")
 
-     
+if ( getHumanChoice === "rock" ) {
+    console.log ('rock');
+} else if ( getHumanChoice === "paper" ) {
+    console.log ('paper');
+} else if ( getHumanChoice === "scissors") {
+    console.log('scissors')
+}
