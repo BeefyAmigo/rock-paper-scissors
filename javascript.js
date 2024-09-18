@@ -12,24 +12,31 @@ function getComputerChoice(min, max) {
         console.log('scissors')
     }
 
-let getHumanChoice = prompt("rock, paper, or scissors?")
-
-if ( getHumanChoice === "rock" ) {
-    console.log ('rock');
-} else if ( getHumanChoice === "paper" ) {
-    console.log ('paper');
-} else if ( getHumanChoice === "scissors") {
-    console.log('scissors')
+function getHumanChoice() {
+   let choice = prompt("rock, paper, or scissors?");
+   console.log(choice)
 }
 
-let humanScore = 0
-let computerScore = 0
+getHumanChoice(console.log)
+//if ( getHumanChoice === "rock" ) {
+//    console.log ('rock');
+//} else if ( getHumanChoice === "paper" ) {
+//    console.log ('paper');
+//} else if ( getHumanChoice === "scissors") {
+//    console.log('scissors')
+//}
 
-function playRound(humanChoice, computerChoice) {
-    humanChoice = humanChoice.toLowerCase();
-}
+//let humanScore = 0
+//et computerScore = 0
 
-const humanSelection = getHumanChoice();
-const computerSelection = getcomputerChoice();
+//unction playRound(humanChoice, computerChoice) {
+   //humanChoice = humanChoice.toLowerCase();
+    //if (getHumanChoice === 'rock' && num === 'scissors') {
+    //    console.log("You Win! Rock beats scissors")
+    //}
+//}
 
-playRound(humanSelection, computerSelection);
+//const humanSelection = getHumanChoice;
+//const computerSelection = num;
+
+//layRound(humanSelection, computerSelection);
