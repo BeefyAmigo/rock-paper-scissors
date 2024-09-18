@@ -24,3 +24,12 @@ if ( getHumanChoice === "rock" ) {
 
 let humanScore = 0
 let computerScore = 0
+
+function playRound(humanChoice, computerChoice) {
+    humanChoice = humanChoice.toLowerCase();
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getcomputerChoice();
+
+playRound(humanSelection, computerSelection);
