@@ -18,13 +18,6 @@ function getHumanChoice() {
 }
 
 getHumanChoice(console.log)
-//if ( getHumanChoice === "rock" ) {
-//    console.log ('rock');
-//} else if ( getHumanChoice === "paper" ) {
-//    console.log ('paper');
-//} else if ( getHumanChoice === "scissors") {
-//    console.log('scissors')
-//}
 
 //let humanScore = 0
 //et computerScore = 0
