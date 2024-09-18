@@ -21,3 +21,6 @@ if ( getHumanChoice === "rock" ) {
 } else if ( getHumanChoice === "scissors") {
     console.log('scissors')
 }
+
+let humanScore = 0
+let computerScore = 0
