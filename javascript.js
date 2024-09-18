@@ -14,7 +14,4 @@ function getComputerChoice(min, max) {
 
 let getHumanChoice = prompt("rock, paper, or scissors?")
 
-if (getHumanChoice.toLowerCase() === "rock") {
-    alert(getComputerChoice(1, 3))
-}
      
