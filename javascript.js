@@ -50,23 +50,12 @@ function playGame() {
 
     
     playRound(humanSelection, computerSelection);
-
-    //if ((playRound(humanChoice, computerChoice) === "You Win! Rock beats Scissors" || "You Win! Paper beats Rock" || "You Win! Scissors beats Paper")) {
-    //    return humanScore++;
-    //}
-    //else if ((playRound(humanChoice, computerChoice) === "You Lose! Paper beats rock" || "You Lose! Scissors beats Paper" || "You Lose! Rock beats Scissors")) {
-    //    return computerScore++;
-    //}
-
-    //function finalScore() {
-    //    if (humanScore = 1){
-    //        console.log("Congrats you Win!");
-    //    } else if (computerScore = 1) {
-    //        console.log("Oh No you Lose!");
-    //    }
-    //}
-    //return finalScore();
-    
+    if ((playRound(humanChoice, computerChoice) === ("You Win! Rock beats Scissors")) || (playRound(humanSelection, computerSelection) === ("You Win! Paper beats Rock")) || (playRound(humanSelection, computerSelection) === ("You Win! Scissors beats Paper"))) {
+        humanScore++;
+    }
+    else if ((playRound(humanChoice, computerChoice) === ("You Lose! Paper beats rock")) || (playRound(humanSelection, computerSelection) === ("You Lose! Scissors beats Paper")) || (playRound(humanSelection, computerSelection) === ("You Lose! Rock beats Scissors"))) {
+        computerScore++;
+    }
 }
 
 
