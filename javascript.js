@@ -45,10 +45,14 @@ function playGame() {
         console.log(computerSelection);
         console.log(playRound(humanSelection, computerSelection));
         console.log(`Player ${humanScore} VS Computer ${computerScore}`)
-        if ((playRound(humanSelection, computerSelection) === ("You Win! Rock beats Scissors")) || (playRound(humanSelection, computerSelection) === ("You Win! Paper beats Rock")) || (playRound(humanSelection, computerSelection) === ("You Win! Scissors beats Paper"))) {
+        if ((playRound(humanSelection, computerSelection) === ("You Win! Rock beats Scissors")) 
+            || (playRound(humanSelection, computerSelection) === ("You Win! Paper beats Rock")) 
+            || (playRound(humanSelection, computerSelection) === ("You Win! Scissors beats Paper"))) {
             humanScore++;
         }
-        else if ((playRound(humanSelection, computerSelection) === ("You Lose! Paper beats Rock")) || (playRound(humanSelection, computerSelection) === ("You Lose! Scissors beats Paper")) || (playRound(humanSelection, computerSelection) === ("You Lose! Rock beats Scissors"))) {
+        else if ((playRound(humanSelection, computerSelection) === ("You Lose! Paper beats Rock")) 
+            || (playRound(humanSelection, computerSelection) === ("You Lose! Scissors beats Paper")) 
+            || (playRound(humanSelection, computerSelection) === ("You Lose! Rock beats Scissors"))) {
             computerScore++;
         }
     }
