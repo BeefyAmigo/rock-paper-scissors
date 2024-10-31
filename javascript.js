@@ -46,17 +46,17 @@ function playGame() {
 
     scissors.addEventListener("click", () => {
         const computerSelection = getComputerChoice();
-        console.log(playRound('scissors', computerSelection));
+        results.textContent = "Results:" + (playRound('scissors', computerSelection));
     })
 
     paper.addEventListener("click", () => {
         const computerSelection = getComputerChoice();
-        console.log(playRound('paper', computerSelection));
+        results.textContent = "Results:" + (playRound('paper', computerSelection));
     })
 
     rock.addEventListener("click", () => {
         const computerSelection = getComputerChoice();
-        console.log(playRound('rock', computerSelection));
+        results.textContent = "Results:" + (playRound('rock', computerSelection));
     })
 
     //for (let i = 0; i < 5; i++){
