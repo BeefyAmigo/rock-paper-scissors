@@ -42,6 +42,7 @@ function playGame() {
     const scissors = document.querySelector("#scissors");
     const paper = document.querySelector("#paper");
     const rock = document.querySelector("#rock");
+    const results = document.querySelector("div");
 
     scissors.addEventListener("click", () => {
         const computerSelection = getComputerChoice();
