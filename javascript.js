@@ -9,11 +9,11 @@ function getComputerChoice() {
     return 'scissors';
    }
 }
-function getHumanChoice() {
-   let choice = prompt("rock, paper, or scissors?");
+//function getHumanChoice() {
+   //let choice = prompt("rock, paper, or scissors?");
 
-   return (choice);
-}
+   //return (choice);
+//}
 
 
 function playGame() {
@@ -39,8 +39,27 @@ function playGame() {
         }
     }
 
-    for (let i = 0; i < 5; i++){
-        const humanSelection = getHumanChoice();
+    const scissors = document.querySelector("#scissors");
+    const paper = document.querySelector("#paper");
+    const rock = document.querySelector("#rock");
+
+    scissors.addEventListener("click", () => {
+        const computerSelection = getComputerChoice();
+        console.log(playRound('scissors', computerSelection));
+    })
+
+    paper.addEventListener("click", () => {
+        const computerSelection = getComputerChoice();
+        console.log(playRound('paper', computerSelection));
+    })
+
+    rock.addEventListener("click", () => {
+        const computerSelection = getComputerChoice();
+        console.log(playRound('rock', computerSelection));
+    })
+
+    //for (let i = 0; i < 5; i++){
+        //const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
         console.log(computerSelection);
         console.log(playRound(humanSelection, computerSelection));
@@ -55,7 +74,7 @@ function playGame() {
             || (playRound(humanSelection, computerSelection) === ("You Lose! Rock beats Scissors"))) {
             computerScore++;
         }
-    }
+    //}
     console.log("Game Over")
     console.log(`Player ${humanScore} VS Computer ${computerScore}`)
     if (humanScore > computerScore) {
