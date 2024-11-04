@@ -54,7 +54,13 @@ function playGame() {
         const computerSelection = getComputerChoice();
         computer.textContent = 'Computer Selection: ' + computerSelection;
         results.textContent ='Results: ' + playRound(humanSelection, computerSelection);
-        if ((playRound(humanSelection, computerSelection) === ("You Win! Rock beats Scissors")) 
+        if (humanScore === 5) {
+            results.textContent = "Congrats You Win!!!";
+        }
+        else if (computerScore === 5) {
+            results.textContent = 'You fucking Suck!';
+        }
+        else if ((playRound(humanSelection, computerSelection) === ("You Win! Rock beats Scissors")) 
             || (playRound(humanSelection, computerSelection) === ("You Win! Paper beats Rock")) 
             || (playRound(humanSelection, computerSelection) === ("You Win! Scissors beats Paper"))) {
             humanScore++;
@@ -67,13 +73,7 @@ function playGame() {
         score.textContent = 'Score: ' + `Player ${humanScore} VS Computer ${computerScore}`;
         });
     });
-    if (humanScore === 5) {
-        document.createElement('div').textContent = "Congrats You Win!!!";
-    } else if (computerScore === 5) {
-        document.createElement('div').textContent = "You Lose! You'll get them next time";
-    } else {
-       console.log("It's a Tie!");
-    }
+    
 }
 playGame();
 
