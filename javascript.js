@@ -10,16 +10,6 @@ function getComputerChoice() {
    }
 }
 
-//Remove logic that plays exactly 5 rounds
-
-//create 3 buttons, one for each selection
-
-//Add an event listener to the buttons that call your playRound function with the
-//correct playerSelection every time a button is clicked
-
-//Add div for displaying results and change all of your console.logs in DOM methods
-
-
 function playGame() {
 
     let humanScore = 0;
