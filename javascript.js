@@ -54,11 +54,15 @@ function playGame() {
         const computerSelection = getComputerChoice();
         computer.textContent = 'Computer Selection: ' + computerSelection;
         results.textContent ='Results: ' + playRound(humanSelection, computerSelection);
+        if (button.id === 'reset') {
+            humanScore = 0;
+            computerScore = 0;
+        }
         if (humanScore === 5) {
             results.textContent = "Congrats You Win!!!";
         }
         else if (computerScore === 5) {
-            results.textContent = 'You fucking Suck!';
+            results.textContent = 'You Lose!';
         }
         else if ((playRound(humanSelection, computerSelection) === ("You Win! Rock beats Scissors")) 
             || (playRound(humanSelection, computerSelection) === ("You Win! Paper beats Rock")) 
